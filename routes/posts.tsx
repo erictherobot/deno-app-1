@@ -3,6 +3,7 @@ import { h } from "preact";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { tw } from "@twind";
 import ListItem from "../components/ListItem.tsx";
+import { Layout } from "../components/Layout.tsx";
 
 interface Posts {
   id: number;
@@ -28,12 +29,19 @@ export default function Page({ data }: PageProps<Posts[] | null>) {
   }
 
   return (
-    <div class={tw`p-4 mx-auto max-w-screen-md`}>
-      <ul class={tw`list-disc`}>
-        {data.map((item) => (
-          <ListItem key={item.id} item={item} />
-        ))}
-      </ul>
-    </div>
+    <Layout
+      title="Posts"
+      description="All the posts from an external API"
+      hasFooter={true}
+      hasHeader={true}
+    >
+      <div class={tw`p-0 mx-auto max-w-screen-md`}>
+        <ul class={tw`list-disc`}>
+          {data.map((item) => (
+            <ListItem key={item.id} item={item} />
+          ))}
+        </ul>
+      </div>
+    </Layout>
   );
 }
