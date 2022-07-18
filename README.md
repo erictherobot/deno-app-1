@@ -2,8 +2,7 @@
 
 #### Watch The Youtube Video
 
-[![Let's build a web app using Deno + Deno Deploy + Deno Fresh Web Framework](https://i.ytimg.com/vi/Qt-YQ0VmgCU/maxresdefault.jpg)](https://www.youtube.com/watch?v=Qt-YQ0VmgCU)
-
+[![Fetching data using Deno Fresh Web Framework - It's Hyper Fast!!!](https://i.ytimg.com/vi/Qt-YQ0VmgCU/maxresdefault.jpg)](https://www.youtube.com/watch?v=Qt-YQ0VmgCU)
 
 ### What is Deno?
 Deno is a simple, modern and secure runtime for JavaScript, TypeScript, and WebAssembly that uses V8 and is built in Rust.
