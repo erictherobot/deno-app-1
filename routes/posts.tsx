@@ -2,7 +2,7 @@
 import { h } from "preact";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { tw } from "@twind";
-import ListItem from "../islands/ListItem.tsx";
+import ListItem from "../components/ListItem.tsx";
 
 interface Posts {
   id: number;
@@ -29,9 +29,11 @@ export default function Page({ data }: PageProps<Posts[] | null>) {
 
   return (
     <div class={tw`p-4 mx-auto max-w-screen-md`}>
-      {data.map((item) => (
-        <ListItem key={item.id} data={item} />
-      ))}
+      <ul class={tw`list-disc`}>
+        {data.map((item) => (
+          <ListItem key={item.id} item={item} />
+        ))}
+      </ul>
     </div>
   );
 }
