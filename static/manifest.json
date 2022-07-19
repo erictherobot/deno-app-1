@@ -1,11 +1,11 @@
 {
   "dir": "auto",
   "display": "fullscreen",
-  "name": "placeholder",
-  "short_name": "placeholder",
+  "name": "Deno Fresh Web Framework - Eric David Smith",
+  "short_name": "deno_fresh",
   "scope": "/",
   "lang": "en",
-  "description": "placeholder description",
+  "description": "Deno Fresh Web Framework - Eric David Smith",
   "theme_color": "#000000",
   "background_color": "#000000"
 }
