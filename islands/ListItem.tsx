@@ -18,12 +18,14 @@ export default function ListItem({ item }: Posts) {
   const [bgColor, setBgColor] = useState(randomColor);
 
   useEffect(() => {
-    setBgColor(randomColor);
+    if (!bgColor) {
+      setBgColor(randomColor);
+    }
   }, []);
 
   return (
     <a href={`/post/${bgColor.substring(1)}/${id}`}>
-      <li class={tw`p-3 bg-[${bgColor}]`}>{title}</li>
+      <li class={tw`p-2 my-2 border-l-8 border-[${bgColor}]`}>{title}</li>
     </a>
   );
 }
