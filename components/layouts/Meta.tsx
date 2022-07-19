@@ -1,7 +1,7 @@
 /** @jsx h */
 import { h } from "preact";
 
-export const Meta = ({
+export function Meta({
   title,
   description,
   canonical,
@@ -9,18 +9,20 @@ export const Meta = ({
   title: string;
   description: string;
   canonical: string;
-}) => (
-  <head>
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <meta
-      name="keywords"
-      content="Deno Fresh Web Framework, TypeScript, HTML, CSS, Javascript, Deno"
-    />
-    <meta name="author" content="Eric David Smith <erictherobot@gmail.com>" />
-    <link
-      rel="canonical"
-      href={`https://erictherobot-deno-app-1.deno.dev${canonical}`}
-    />
-  </head>
-);
+}) {
+  return (
+    <head>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta
+        name="keywords"
+        content="Deno Fresh Web Framework, TypeScript, HTML, CSS, Javascript, Deno"
+      />
+      <meta name="author" content="Eric David Smith <erictherobot@gmail.com>" />
+      <link
+        rel="canonical"
+        href={`https://erictherobot-deno-app-1.deno.dev${canonical}`}
+      />
+    </head>
+  );
+}
