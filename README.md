@@ -68,8 +68,7 @@ Deno Deploy is a distributed system that runs JavaScript, TypeScript, and WebAss
 - https://deno.com/deploy/pricing
 
 ### Our Project on Deno Deploy
-- https://erictherobot-deno-app-1.deno.dev/posts
-- https://erictherobot-deno-app-1.deno.dev/post/1
+- https://erictherobot-deno-app-1.deno.dev/
 
 ### Deno Docs
 When you get stuck, the docs are really great:
