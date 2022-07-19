@@ -40,13 +40,15 @@ export function Meta({
         sizes="16x16"
         href="/favicon-16x16.png"
       />
-      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="manifest" href="/manifest" />
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
       <link rel="manifest" href="/manifest.json" />
       <script type="module">
-        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate'; const el =
-        document.createElement('pwa-update'); document.body.appendChild(el);
+        import
+        'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate/dist/pwa-update.js';
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
       </script>
     </head>
   );
