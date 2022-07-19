@@ -24,8 +24,12 @@ export default function ListItem({ item }: Posts) {
   }, []);
 
   return (
-    <a href={`/post/${bgColor.substring(1)}/${id}`}>
-      <li class={tw`p-2 my-2 border-l-8 border-[${bgColor}]`}>{title}</li>
-    </a>
+    <li
+      class={tw`block p-2 my-2 border-l-4 border-[${bgColor}] hover:border-l-8`}
+    >
+      <a href={`/post/${bgColor.substring(1)}/${id}`}>
+        <div>{title}</div>
+      </a>
+    </li>
   );
 }
