@@ -1,0 +1,11 @@
+{
+  "dir": "auto",
+  "display": "fullscreen",
+  "name": "placeholder",
+  "short_name": "placeholder",
+  "scope": "/",
+  "lang": "en",
+  "description": "placeholder description",
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}
