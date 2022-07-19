@@ -43,7 +43,7 @@ export default function Page(props: PageProps<PostProps>) {
       <div class={tw`p-0 mx-auto`}>
         <div class={tw`my-4`}>
           <a href="/posts">&larr; Back to posts</a>
-          <h1 class={tw`text-2xl font-bold`}>{title}</h1>
+          <h2 class={tw`text-2xl font-bold`}>{title}</h2>
           <div class={tw`py-1 ${"bg-[#" + bgColor + "]"}`} />
           <p>{body}</p>
         </div>

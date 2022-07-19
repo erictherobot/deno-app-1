@@ -13,7 +13,7 @@ export default function Home() {
       hasFooter={true}
       hasHeader={true}
     >
-      <div class={tw`p-4 mx-auto`}>
+      <div class={tw`p-0 mx-auto`}>
         <img
           src="/logo.svg"
           height="100px"
