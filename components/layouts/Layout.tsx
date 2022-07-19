@@ -23,7 +23,7 @@ export function Layout({
   hasFooter,
 }: LayoutProps) {
   return (
-    <div class={tw`p-4 mx-auto max-w-screen-md`}>
+    <div class={tw`p-4 mx-auto max-w-7xl`}>
       <Meta title={title} description={description} canonical={canonical} />
       {hasHeader && <Header />}
       <main>{children}</main>

@@ -36,8 +36,8 @@ export default function Page({ data }: PageProps<Posts[] | null>) {
       hasFooter={true}
       hasHeader={true}
     >
-      <div class={tw`p-0 mx-auto max-w-screen-md`}>
-        <ul class={tw`list-disc`}>
+      <div class={tw`p-0 mx-auto`}>
+        <ul class={tw`list-none`}>
           {data.map((item) => (
             <ListItem key={item.id} item={item} />
           ))}

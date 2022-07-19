@@ -2,7 +2,7 @@
 import { h } from "preact";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { tw } from "@twind";
-import { Layout } from "../../components/layouts/Layout.tsx";
+import { Layout } from "../../../components/layouts/Layout.tsx";
 
 interface PostProps {
   id: number;
@@ -23,9 +23,12 @@ export const handler: Handlers<PostProps | null> = {
   },
 };
 
-export default function Page({ data }: PageProps<PostProps>) {
-  const { id, title, body } = data;
-  if (!data) {
+export default function Page(props: PageProps<PostProps>) {
+  const { id, title, body } = props.data;
+
+  const bgColor = props.params.color;
+
+  if (!props.data) {
     return <h1>Post not found</h1>;
   }
 
@@ -37,10 +40,10 @@ export default function Page({ data }: PageProps<PostProps>) {
       hasFooter={true}
       hasHeader={true}
     >
-      <div class={tw`p-0 mx-auto max-w-screen-md`}>
+      <div class={tw`p-0 mx-auto`}>
         <div class={tw`my-4`}>
           <h1 class={tw`text-2xl font-bold`}>{title}</h1>
-          <hr class={tw`my-2`} />
+          <div class={tw`py-1 ${"bg-[#" + bgColor + "]"}`} />
           <p>{body}</p>
         </div>
       </div>
