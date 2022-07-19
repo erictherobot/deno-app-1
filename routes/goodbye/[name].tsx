@@ -7,7 +7,8 @@ export default function Goodbye(props: PageProps) {
   return (
     <Layout
       title={`Goodbye ${props.params.name}`}
-      description=""
+      description={`Goodbye ${props.params.name}`}
+      canonical={`/goodbye/${props.params.name}`}
       hasFooter={true}
       hasHeader={true}
     >

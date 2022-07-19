@@ -7,22 +7,24 @@ import { Meta } from "./Meta.tsx";
 
 interface LayoutProps {
   children: ComponentChildren;
-  hasHeader?: boolean;
-  hasFooter?: boolean;
   title: string;
   description: string;
+  canonical: string;
+  hasHeader?: boolean;
+  hasFooter?: boolean;
 }
 
 export function Layout({
   children,
   title,
   description,
+  canonical,
   hasHeader,
   hasFooter,
 }: LayoutProps) {
   return (
     <div class={tw`p-4 mx-auto max-w-screen-md`}>
-      <Meta title={title} description={description} />
+      <Meta title={title} description={description} canonical={canonical} />
       {hasHeader && <Header />}
       <main>{children}</main>
       {hasFooter && <Footer />}

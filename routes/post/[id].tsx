@@ -23,23 +23,25 @@ export const handler: Handlers<PostProps | null> = {
   },
 };
 
-export default function Page({ data }: PageProps<PostProps | null>) {
+export default function Page({ data }: PageProps<PostProps>) {
+  const { id, title, body } = data;
   if (!data) {
     return <h1>Post not found</h1>;
   }
 
   return (
     <Layout
-      title={data.title}
-      description={data.body}
+      title={title}
+      description={body}
+      canonical={`/post/${id}`}
       hasFooter={true}
       hasHeader={true}
     >
       <div class={tw`p-0 mx-auto max-w-screen-md`}>
         <div class={tw`my-4`}>
-          <h1 class={tw`text-2xl font-bold`}>{data.title}</h1>
+          <h1 class={tw`text-2xl font-bold`}>{title}</h1>
           <hr class={tw`my-2`} />
-          <p>{data.body}</p>
+          <p>{body}</p>
         </div>
       </div>
     </Layout>

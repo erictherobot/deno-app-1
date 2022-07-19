@@ -7,8 +7,9 @@ import { Layout } from "../components/layouts/Layout.tsx";
 export default function Home() {
   return (
     <Layout
-      title="Posts"
-      description="All the posts from an external API"
+      title="Welcome"
+      description="Welcome"
+      canonical="/"
       hasFooter={true}
       hasHeader={true}
     >

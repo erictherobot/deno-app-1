@@ -7,7 +7,8 @@ export default function Hello(props: PageProps) {
   return (
     <Layout
       title={`Hello ${props.params.name}`}
-      description=""
+      description={`Hello ${props.params.name}`}
+      canonical={`/goodbye/${props.params.name}`}
       hasFooter={true}
       hasHeader={true}
     >

@@ -32,6 +32,7 @@ export default function Page({ data }: PageProps<Posts[] | null>) {
     <Layout
       title="Posts"
       description="All the posts from an external API"
+      canonical="/posts"
       hasFooter={true}
       hasHeader={true}
     >
