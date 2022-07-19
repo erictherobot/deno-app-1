@@ -2,7 +2,7 @@
 import { h } from "preact";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { tw } from "@twind";
-import { Layout } from "../../components/Layout.tsx";
+import { Layout } from "../../components/layouts/Layout.tsx";
 
 interface PostProps {
   id: number;

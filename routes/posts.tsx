@@ -2,8 +2,8 @@
 import { h } from "preact";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { tw } from "@twind";
-import ListItem from "../components/ListItem.tsx";
-import { Layout } from "../components/Layout.tsx";
+import ListItem from "../islands/ListItem.tsx";
+import { Layout } from "../components/layouts/Layout.tsx";
 
 interface Posts {
   id: number;
