@@ -19,6 +19,8 @@ export function Meta({
         content="Deno Fresh Web Framework, TypeScript, HTML, CSS, Javascript, Deno"
       />
       <meta name="author" content="Eric David Smith <erictherobot@gmail.com>" />
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="theme-color" content="#ffffff" />
       <link
         rel="canonical"
         href={`https://erictherobot-deno-app-1.deno.dev${canonical}`}
@@ -40,9 +42,6 @@ export function Meta({
         sizes="16x16"
         href="/favicon-16x16.png"
       />
-      <link rel="manifest" href="/manifest" />
-      <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="theme-color" content="#ffffff" />
       <link rel="manifest" href="/manifest.json" />
       <script type="module">
         import
