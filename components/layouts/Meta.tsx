@@ -1,5 +1,6 @@
 /** @jsx h */
 import { h } from "preact";
+import { Head } from "https://deno.land/x/fresh@1.0.1/runtime.ts";
 
 export function Meta({
   title,
@@ -11,7 +12,7 @@ export function Meta({
   canonical: string;
 }) {
   return (
-    <head>
+    <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta
@@ -49,6 +50,6 @@ export function Meta({
         const el = document.createElement('pwa-update');
         document.body.appendChild(el);
       </script>
-    </head>
+    </Head>
   );
 }
